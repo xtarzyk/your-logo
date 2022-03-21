@@ -23,46 +23,54 @@ body {
     flex-direction: column;
     min-width: 250px;
     color: #e8e8e8;
+    /*animation: side-bar-animation 2s ease-in-out forwards;*/
 }
 
-.side-top {
+.side-header {
     justify-content: space-evenly;
     background: blue;
     border-radius: 10px 0 0 0;
+    height: 65px;
 }
 
-.side-top h3 {
+.side-header__title {
     margin-right: 20px;
+    /*animation: disappear 2s forwards;*/
 }
 
-.menu-icon {
+.side-header__menu-icon {
     position: relative;
     top: 18px;
     width: 30px;
     height: 22px;
+    /*animation: move 2s forwards;*/
 }
 
-.search-bar {
+.search-section {
+    max-width: 300px;
+}
+
+.search-section__input {
     margin: 10px 20px;
-    width: 300px;
+    max-width: 300px;
     border: none;
     border-radius: 15px;
 }
 
-.search-icon {
-    position: absolute;
+.search-section__icon {
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 30px;
-    left: 550px;
+    top: 25px;
+    right: 50px;
 }
 
-.user-icon {
+.user-section__icon {
     width: 40px;
     margin: 10px 40px;
 }
 
-.side-core {
+.side-body {
     flex-direction: column;
     align-items: center;
     flex: 2;
@@ -70,7 +78,7 @@ body {
     border-radius: 0 0 0 10px;
 }
 
-.dashboard {
+.side-body__dashboard {
     margin: 100px 60px 0 0;
 }
 
@@ -81,15 +89,18 @@ body {
     color: #6584ea;
     opacity: 0.8;
     margin-right: 20px;
+    /*animation: disappear 2s forwards;*/
 }
 
-.dashboard p {
+.side-core__dashboard-title {
     color: #6584ea;
     opacity: 0.8;
+    /*animation: disappear 2s forwards;*/
 }
 
-.messages {
+.side-body__messages {
     margin-right: 27px;
+    /*animation: disappear 2s forwards;*/
 }
 
 .fa-envelope {
@@ -99,7 +110,7 @@ body {
     margin-right: 20px;
 }
 
-.red-box {
+.side-core__messages-red-box {
     background-color: red;
     padding: 0 5px;
     margin-left: 20px;
@@ -110,37 +121,41 @@ body {
     width: 100%;
 }
 
-.main-top {
+.main-container__header {
     flex-direction: row;
     justify-content: space-between;
     background: #6584ea;
     border-radius: 0 10px 0 0;
     color: #e8e8e8;
+    height: 70px;
 }
 
-.main-core {
+.main-container__body {
     flex-direction: column;
     background: #e8e8e8;
     height: 100%;
     border-radius: 0 0 10px 0;
 }
 
-h2 {
+.main-container__title {
     position: relative;
     top: 15px;
     margin-left: 20px;
 }
 
-.blocks {
+.main-container__blocks {
     margin: 10px;
+    height: 100%;
 }
 
-.left-column {
+.blocks__left-column {
     flex-direction: column;
+    flex: 3;
 }
 
-.right-column {
+.blocks__right-column {
     flex-direction: column;
+    flex: 2;
 }
 
 .block {
@@ -149,27 +164,105 @@ h2 {
     margin: 10px;
 }
 
-.top-left {
-    width: 45vw;
-    height: 30vh;
+.left-column__top {
+    height: 400px;
 }
 
-.bottom-left {
-    width: 45vw;
-    height: 40vh;
+.left-column__bottom {
+    height: 500px;
 }
 
-.top-right {
-    width: 34vw;
-    height: 25%;
+.right-column__top {
+    height: 300px;
 }
 
-.middle-right {
-    width: 34vw;
-    height: 55%;
+.right-column__middle {
+    height: 400px;
 }
 
-.bottom-right {
-    width: 34vw;
-    height: 15%;
+.right-column__bottom {
+    height: 180px;
+}
+
+/*@keyframes side-bar-animation {*/
+/*    to {*/
+/*        min-width: 50px;*/
+/*    }*/
+/*}*/
+
+/*@keyframes disappear {*/
+/*    from {*/
+/*        opacity: 100%;*/
+/*    }*/
+/*    to {*/
+/*        opacity: 0;*/
+/*        overflow: hidden;*/
+/*        visibility: hidden;*/
+/*        width: 0;*/
+/*    }*/
+/*}*/
+
+/*@keyframes move {*/
+/*    to {*/
+/*        left: 10px;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 600px){
+    .main-container__blocks {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .main-container__header {
+        border-radius: 0;
+    }
+
+    .main-container__body {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .side-bar {
+        flex-direction: row;
+        height: 65px;
+    }
+
+    .side-header {
+        height: 65px;
+    }
+
+    .side-header__title {
+        display: none;
+    }
+
+    .side-header__menu-icon {
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+
+    .side-body {
+        flex-direction: row;
+        background-color: blue;
+        width: 100%;
+        border-radius: 0 10px 0 0;
+        align-items: flex-start;
+    }
+
+    .side-body__dashboard {
+        margin: 10px 10px 10px 30px;
+    }
+
+    .side-body__messages {
+        margin: 10px;
+    }
+
+
 }

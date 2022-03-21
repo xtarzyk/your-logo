@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f4d54669b9.js" crossorigin="anonymous"></script>
     <title>Form</title>
 </head>
 <body>
-    <div class="form">
-        <div class="side-bar">
-            <div class="side-top">
-                <img class="menu-icon" src="menu-icon.png" alt="menu">
-                <h3>YOUR LOGO</h3>
+<div class="form">
+    <div class="side-bar">
+        <div class="side-header">
+            <img class="side-header__menu-icon" src="menu-icon.png" alt="menu">
+            <h3 class="side-header__title">YOUR LOGO</h3>
+        </div>
+        <div class="side-body">
+            <div class="side-body__dashboard">
+                <i class="fa-solid fa-house"></i>
+                <p class="side-core__dashboard-title">Dashboard</p>
             </div>
-            <div class="side-core">
-                <div class="dashboard">
-                    <i class="fa-solid fa-house"></i>
-                    <p>Dashboard</p>
-                </div>
-                <div class="messages">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>Messages</p>
-                    <p class="red-box">3</p>
-                </div>
+            <div class="side-body__messages">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Messages</p>
+                <p class="side-core__messages-red-box">3</p>
             </div>
         </div>
-        <div class="main-container">
-            <div class="main-top">
-                <input class="search-bar" type="text" placeholder="   Search..."/>
-                <img class="search-icon" src="search-icon.png" alt="magnifying glass">
-                <div class="user-section">
-                    <h3>Hi, Laura Jane</h3>
-                    <img class="user-icon" src="user-cirlce-icon.png" alt="user icon">
-                </div>
+    </div>
+    <div class="main-container">
+        <div class="main-container__header">
+            <div class="main-container__search-section">
+                <input class="search-section__input" type="text" placeholder="   Search..."/>
+                <img class="search-section__icon" src="search-icon.png" alt="magnifying glass">
             </div>
-            <div class="main-core">
-                <h2>Overview</h2>
-                <div class="blocks">
-                    <div class="left-column">
-                        <div class="block top-left">
-                        </div>
-                        <div class="block bottom-left">
-
-                        </div>
+            <div class="main-container__user-section">
+                <h3>Hi, Laura Jane</h3>
+                <img class="user-section__icon" src="user-cirlce-icon.png" alt="user icon">
+            </div>
+        </div>
+        <div class="main-container__body">
+            <h2 class="main-container__title">Overview</h2>
+            <div class="main-container__blocks">
+                <div class="blocks__left-column">
+                    <div class="block left-column__top">
                     </div>
-                    <div class="right-column">
-                        <div class="block top-right">
+                    <div class="block left-column__bottom">
 
-                        </div>
-                        <div class="block middle-right">
+                    </div>
+                </div>
+                <div class="blocks__right-column">
+                    <div class="block right-column__top">
 
-                        </div>
-                        <div class="block bottom-right">
+                    </div>
+                    <div class="block right-column__middle">
 
-                        </div>
+                    </div>
+                    <div class="block right-column__bottom">
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
