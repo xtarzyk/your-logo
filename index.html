@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sasstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f4d54669b9.js" crossorigin="anonymous"></script>
-    <title>Form</title>
+    <title>Your Logo</title>
 </head>
 <body>
-<div class="form">
+<div class="container">
     <div class="side-bar">
         <div class="side-header">
             <img class="side-header__menu-icon" src="menu-icon.png" alt="menu">
@@ -17,12 +17,12 @@
         <div class="side-body">
             <div class="side-body__dashboard">
                 <i class="fa-solid fa-house"></i>
-                <p class="side-core__dashboard-title">Dashboard</p>
+                <p class="side-body__dashboard-title">Dashboard</p>
             </div>
             <div class="side-body__messages">
                 <i class="fa-solid fa-envelope"></i>
                 <p>Messages</p>
-                <p class="side-core__messages-red-box">3</p>
+                <p class="side-body__messages-counter">3</p>
             </div>
         </div>
     </div>
@@ -32,29 +32,29 @@
                 <input class="search-section__input" type="text" placeholder="   Search..."/>
                 <img class="search-section__icon" src="search-icon.png" alt="magnifying glass">
             </div>
-            <div class="main-container__user-section">
-                <h3>Hi, Laura Jane</h3>
-                <img class="user-section__icon" src="user-cirlce-icon.png" alt="user icon">
+            <div class="main-container__user-section user">
+                <h3 class="user__greetings">Hi, Laura Jane</h3>
+                <img class="user__avatar" src="user-cirlce-icon.png" alt="user icon">
             </div>
         </div>
         <div class="main-container__body">
             <h2 class="main-container__title">Overview</h2>
-            <div class="main-container__blocks">
+            <div class="main-container__blocks blocks">
                 <div class="blocks__left-column">
-                    <div class="block left-column__top">
+                    <div class="block blocks__left-top">
                     </div>
-                    <div class="block left-column__bottom">
+                    <div class="block blocks__left-bottom">
 
                     </div>
                 </div>
                 <div class="blocks__right-column">
-                    <div class="block right-column__top">
+                    <div class="block blocks__right-top">
 
                     </div>
-                    <div class="block right-column__middle">
+                    <div class="block blocks__right-middle">
 
                     </div>
-                    <div class="block right-column__bottom">
+                    <div class="block blocks__right-bottom">
 
                     </div>
                 </div>
@@ -62,5 +62,6 @@
         </div>
     </div>
 </div>
+<script src="scripts.js"></script>
 </body>
 </html>

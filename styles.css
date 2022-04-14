@@ -6,7 +6,7 @@ body {
     font-family: "Arial Rounded MT", sans-serif;
 }
 
-.form {
+.container {
     display: flex;
     margin: 10px;
     max-width: 100%;
@@ -15,7 +15,7 @@ body {
     border-radius: 10px;
 }
 
-.form div {
+.container div {
     display: flex;
 }
 
@@ -65,7 +65,7 @@ body {
     right: 50px;
 }
 
-.user-section__icon {
+.user__avatar {
     width: 40px;
     margin: 10px 40px;
 }
@@ -92,7 +92,7 @@ body {
     /*animation: disappear 2s forwards;*/
 }
 
-.side-core__dashboard-title {
+.side-body__dashboard-title {
     color: #6584ea;
     opacity: 0.8;
     /*animation: disappear 2s forwards;*/
@@ -110,7 +110,7 @@ body {
     margin-right: 20px;
 }
 
-.side-core__messages-red-box {
+.side-body__messages-counter {
     background-color: red;
     padding: 0 5px;
     margin-left: 20px;
@@ -164,23 +164,23 @@ body {
     margin: 10px;
 }
 
-.left-column__top {
+.blocks__left-top {
     height: 400px;
 }
 
-.left-column__bottom {
+.blocks__left-bottom {
     height: 500px;
 }
 
-.right-column__top {
+.blocks__right-top {
     height: 300px;
 }
 
-.right-column__middle {
+.blocks__right-middle {
     height: 400px;
 }
 
-.right-column__bottom {
+.blocks__right-bottom {
     height: 180px;
 }
 
@@ -218,7 +218,7 @@ body {
         font-size: 12px;
     }
 
-    .form {
+    .container {
         flex-direction: column;
     }
 
